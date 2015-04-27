@@ -1,0 +1,789 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{ltablex}
+\usepackage{pdfcolparcolumns}
+\usepackage[gen]{eurosym}
+\usepackage{bibentry}
+\usepackage[table]{xcolor}
+\nobibliography*
+
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont{Adobe Garamond Pro} % Main document font
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+\def\FormatName#1{%
+  \def\myname{Francesco Nori}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \underline{#1}%
+  \else
+    #1%
+  \fi
+}
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=20.0}\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+Via Morego, 30 {\large\textperiodcentered} 16163 Genova {\large\textperiodcentered} Italy \\ % Your mailing address
+{\Large\Letter} francesco.nori@iit.it \ {\Large\Telefon} (+39) 349 66 51 555 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+\flushleft
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape Francesco Nori} % Your name at the top
+\\ \vspace{0.5cm}
+{\addfontfeature{LetterSpace=20.0}\fontsize{18}{18}\selectfont\scshape Researcher in Robotics} % Your name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+\justifying
+\section{Curriculum synopsis}
+
+{\setlength{\parindent}{0pt}
+\begin{parcolumns}[nofirstindent, sloppy,
+                    colwidths={1={0.2\linewidth},2={0.77\linewidth}}%
+                    ]{2}
+             
+% BIBLIOMETRICS                   
+ \colchunk{\textbf{Bibliometric indexes}}
+ \colchunk{Major indicators: (1) h-index: 8 on Web of Science, 11 on Scopus, 19 on Google scholar citations; (2) citations: $\sim 180$ on Web of Science, $\sim 500$ on Scopus, $\sim1500$ on Google scholar citations; (3) more than 80 publications on major international journals, conference proceedings and book chapters; (4) 18 publications on relevant international journals.}
+\colplacechunks
+\vspace{0.3cm}
+                    
+% FUND RAISING
+ \colchunk{\textbf{Funds raising}}
+ \colchunk{EC grants fund rising for approximately 1.7 million euros: (1) coordinator of the EC grant CoDyCo; (2) principal investigator in the EC grant Koroibot; (3) direct involvement in Marie-Curie international training networks: ROboTAsk, PACE, SECURE and RobotDoC; (4) formal involvement in EC grants: VIACTORS, ITALK and ROBOSKIN.}
+\colplacechunks
+\vspace{0.3cm}
+
+% RESEARCH                   
+ \colchunk{\textbf{Research multidisciplinarity}}
+ \colchunk{Multidisciplinary research career based on the two underpinning and intertwined goals: (1) designing robots and algorithms for dynamic tasks execution; (2) advancing the current understanding of human motor control in performing complex motor tasks.}
+\colplacechunks
+\vspace{0.3cm}
+
+% RESEARCH                   
+ \colchunk{\textbf{Technology development}}
+ \colchunk{Major contributor with Giorgio Metta and Lorenzo Natale to the iCub humanoid robot development, with specific focus on compliant motion control. Contributor to the iCub dissemination at more than thirty international events. Sustainer of the iCub community by raising funds to build two copies of the iCub, donated to the University of Heidelberg, Prof. Katja Mombaur, and to the Technical University of Darmstadt, Prof. Jan Peters.}
+\colplacechunks
+\vspace{0.3cm}
+
+% TEACHING
+ \colchunk{\textbf{Teaching and mentoring}}
+ \colchunk{Frontal teaching activities for approximately 300 hours. Formal involvement either as teaching assistant or as a professor in teaching assignment at the University of Padova and at the University of Genoa. Mentoring of more than ten Ph.D. candidates of the Ph.D. program in Bioengineering and robotics at the University of Genoa.}
+\colplacechunks
+\vspace{0.3cm}
+
+% INTERNATIONAL EXPERIENCE
+ \colchunk{\textbf{International experience and visibility}}
+ \colchunk{(1) Visiting student at the UCLA VisionLab, University of California, Los Angeles; (2) three-times one-month invited professor at international research centers; (3) involvement in more than 20 international workshops as organiser and speaker.}
+\colplacechunks
+\vspace{0.3cm}
+
+\end{parcolumns}  
+}
+
+\section{Brief biography}
+Francesco Nori is a researcher in robotics at the Istituto Italiano di Tecnologia. He received his D.Ing. degree (highest honours) and Ph.D. in control theory from the University of Padova, Italy. He has been visiting student at the University of California Los Angeles (UCLA) and visiting professor at Universit\'e Pierre et Marie Curie (UPMC). Francesco Nori has been one of the main developers of the iCub robot with specific focus on compliant motion control. During the last years he has been involved in several European projects as key investigator, principal investigator and coordinator. 
+
+\section{Scientific contributions}
+\justify
+Francesco Nori has been working on research topics related to motion planning, torque control, (active and passive) compliant actuation, whole-body motion control and physical interaction control. Part of his research activities have been dedicated to human motion analysis, trying to find common principles in human and humanoid motion control leveraging on tools such as stochastic calculus, optimal control and dynamic models of articulated structures.
+
+\section{Identifying information}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+Birth        & \textbf{Novermber $5^{th}$, 1976} \hfill Padova, Italy\\
+Job Title    & \textbf{Researcher in robotics}\\
+Phone        & \textbf{+ 39 349 66 51 555}\\
+Email        & \textbf{\href{mailto:francesco.nori@iit.it}{francesco.nori@iit.it}}\\
+Web          & \textbf{\url{http://people.liralab.it/iron}}\\
+Home Address & \textbf{Via Leonardo Cocito 9, 16145}  \hfill Genova, Italy\\
+\end{tabularx}                  
+
+\section{Education}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Title       & \textbf{M.Sc. in computer science} \\
+\gray Institution & \textbf{University of Padova} \hfill Italy\\
+\gray Period      & {September 1996 --- May 2001}\\
+& Master degree in automatic control, with highest honors (110/110 summa cum laude) at the University of Padova, Italy. Thesis: tracking of the human body pose from video sequences. Advisors: Prof. Ruggero Frezza, University of Padova, Italy and Prof. Stefano Soatto, University of California, Los Angeles, United States of America. \\
+
+\gray Title       & \textbf{Ph.D. in control theory} \\
+\gray Institution & \textbf{University of Padova} \hfill Italy\\
+\gray Period      & {January 2002 --- April 2005}\\
+& Ph.D. in automatic control, at the laboratory for computational vision and autonomous navigation (NavLab), University of Padova, Italy. Thesis: symbolic control with biologically inspired motion primitives. Advisor: Prof. Ruggero Frezza.
+\end{tabularx}
+
+\section{Professional experience}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Job         & \textbf{Postdoctoral researcher in robotics}\\
+\gray Institution & \textbf{University of Genoa} \hfill Italy\\
+\gray Period      & {May 2005 --- October 2006}\\
+                  & Postdoctoral researcher at the laboratory for integrated advanced robotics (LIRA-Lab), University of Genoa, Italy. Supervisors: Prof. Giulio Sandini and Prof. Giorgio Metta, University of Genoa, Italy. \\
+
+\gray Job         & \textbf{Team leader and researcher}\\
+\gray Institution & \textbf{Istituto Italiano di Tecnologia} \hfill Italy\\
+\gray Period      & {November 2006 --- Present}\\
+                  & Team leader at the cognitive humanoids laboratory of the Robotics, Brain and Cognitive Sciences (RBCS) Department, Istituto Italiano di Tecnologia (IIT), Genoa, Italy.                  
+\end{tabularx}
+
+\section{International experience}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+% UCLA
+\gray Experience  & \textbf{Visiting student}\\
+\gray Institution & \textbf{University of California, Los Angeles} \hfill United States\\
+\gray Period      & {January 2001 --- April 2001}\\
+                  & Visiting student at the UCLA VisionLab. Project description: human marker-less motion capture. Project supervisor: Prof. Stefano Soatto, University of California, Los Angeles. \\
+% UPMC
+\gray Experience  & \textbf{Invited professor}\\
+\gray Institution & \textbf{University Pierre et Marie Curie, Paris} \hfill France\\
+\gray Period      & {June 2013}\\
+                  & Invited professor at the Institut des Syst\`emes Intelligents et de Robotique, University Pierre et Marie Curie, Paris, France. Inviting professors: Prof. Vincent Padois and Prof. Olivier Sigaud, Institut des Syst\`emes Intelligents et de Robotique, University Pierre et Marie Curie. \\
+                  
+% Paris SUD
+\gray Experience  & \textbf{Invited professor}\\
+\gray Institution & \textbf{University Paris Sud 11, Paris} \hfill France\\
+\gray Period      & {June 2015 --- July 2015}\\
+                  & Invited professor at the CIAMS laboratory in the Motor Control and perception team, University Paris-Sud 11, Paris, France. Inviting professors: Prof. Bastien Berret, University Paris-Sud 11 and Prof. Fr\'ed\'eric Jean, ENSTA Paris-Tech, Unit\'e de Math\'ematiques Appliqu\'ees. \\
+                  
+% INRIA
+\gray Experience  & \textbf{Invited professor}\\
+\gray Institution & \textbf{Institut National de Recherche en Informatique et Automatique (INRIA)} \hfill France\\
+\gray Period      & {December 2015}\\
+                  & Invited professor at the INRIA Nancy Grand-Est (France). Inviting researchers: Dr. Serena Ivaldi, INRIA Nancy Grand-Est and Prof. Fran\c{c}ois Charpillet, directeur de recherche at INRIA. \\
+                                                    
+\end{tabularx}
+
+%-------------------------------------------------------------------
+%	SELECTED PUBBLICATIONS
+%-------------------------------------------------------------------
+
+\section{Selected publications}
+\begin{enumerate}
+\item \bibentry{nori2005}.
+\item \bibentry{metta2010}.
+\item \bibentry{fumagalli2012}.
+\item \bibentry{delPrete2014}.
+\item \bibentry{nori2015}.
+
+\end{enumerate}
+
+
+
+%-------------------------------------------------------------------
+%	GRANTS
+%-------------------------------------------------------------------
+
+\section{Grants received}
+
+{\setlength{\parindent}{0pt}
+\begin{parcolumns}[nofirstindent, sloppy,
+                    colwidths={1={0.3\linewidth},2={0.67\linewidth}}%
+                    ]{2}
+% CoDyCo
+ \colchunk{\textbf{CoDyCo \\ project coordinator}}
+ \colchunk{EU funded FP-7 project (ICT-2011-9 project number 600716, http://www.codyco.eu). Project related activities: consortium coordinator and IIT principal investigator. Project details: small or medium scale focused research project (STREP). Total EC contribution:  910,015 \euro{} (on a total budget of 3,175,000 \euro{}). Duration: 4 years [May 2013 --- February 2017].}
+\colplacechunks
+\vspace{0.3cm}
+
+% Koroibot                   
+ \colchunk{\textbf{Koroibot \\ principal investigator}}
+ \colchunk{EU funded FP-7 project (ICT-2013-10 project number 611909). Project related activities: IIT principal investigator. Project details: small or medium scale focused research project (STREP). EC contribution: 577,649 \euro{} (on a total budget of 4,160,000 \euro{}). Duration: 3 years [October 2013 --- September 2016].}
+\colplacechunks
+\vspace{0.5cm}
+
+% RoboTAsk                   
+ \colchunk{\textbf{RoboTAsk \\ scientist in charge}}
+ \colchunk{EU funded FP-7 project (FP7-PEOPLE-2013-IEF project number 624424). Project related activities: scientist in charge (i.e. supervisor at the host institution). Project researcher: Dr. Francesca Stramandinoli. Project details: Marie Curie intra-European fellowships for career development (IEF). EC contribution: 179,739 \euro{}. Duration: 2 years [November 2014 --- October 2016]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% PACE
+ \colchunk{\textbf{PACE \\ main developer}}
+ \colchunk{EU funded H2020 project (H2020-MSCA-ITN-2014). Project related activity: main developer with Dr. Monica Gori and Dr. Gabriel Baud-Bovy. Principal investigator: Prof. Giulio Sandini. Project details: Marie Curie action, initial training network (ITN). EC contribution: 516,123 \euro{}. Duration: 4 years [starting date yet to be defined]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% SECURE
+ \colchunk{\textbf{SECURE \\ main developer}}
+ \colchunk{EU funded H2020 project (H2020-MSCA-ITN-2014). Project related activity: main developer. Principal investigator: Prof. Giorgio Metta. Project details: Marie Curie action, initial training network (ITN). EC contribution: t.b.d. \euro{}. Duration: 3 years [starting date yet to be defined]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% ITALK                   
+ \colchunk{\textbf{ITALK \\ main developer}}
+ \colchunk{EU funded FP-7 project (FP7-ICT-2007-1 project number 214668). Project related activities: main developer. Project principal investigator: Prof. Giorgio Metta. Project details: integrated project (IP). EC contribution: 826,800 \euro{}. Duration: 4 years [March 2008 --- February 2012]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% ROBOSKIN                   
+ \colchunk{\textbf{ROBOSKIN \\ main developer}}
+ \colchunk{EU funded FP-7 project (FP7-ICT-2007-3 project number 231500). Project related activities: main developer. Project principal investigator: Prof. Giorgio Metta. Project details: integrated project (IP). EC contribution: 475,380 \euro{}. Duration: 3 years [May 2009 --- April 2012]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% Viactors                   
+ \colchunk{\textbf{VIACTORS \\ staff member}}
+ \colchunk{EU funded FP-7 project (FP7-ICT-2007-3 project number 231554). Project related activities: department activity coordinator. Project details: small or medium scale focused research project (STREP). EC contribution: 188,396 \euro{}. Duration: 3 years [February 2009 --- January 2012]. }
+\colplacechunks
+\vspace{0.5cm}
+
+% RobotDoC                   
+ \colchunk{\textbf{RobotDoC \\ staff member}}
+ \colchunk{EU funded FP-7 project (FP7-PEOPLE-ITN-2008 project number 235065). Project related activities: staff member and Ph.D. students co-supervisor. Project details: small or medium scale focused research project (STREP). EC contribution: 3,492,830 \euro{}. Duration: 5 years [September 2009 --- September 2014]. }
+\colplacechunks
+\end{parcolumns} 
+}
+
+%-------------------------------------------------------------------
+%	INVITED
+%-------------------------------------------------------------------
+
+\section{Selected invited talks}
+
+\begin{itemize}
+\item October 2014. Invited speaker at the Journ\'ees Nationales du GdR Robotique 2014, held at Grand amphith\'e\^{a}tre du Centre Arts et M\'etiers ParisTech, 151-155 boulevard de l'H\^{o}pital, 75013 Paris. 30 October 2014.
+
+\item April 2009. Invited speaker at the exploratory workshop on ``Modularity for versatile motor learning''. Funded by the European Science Foundation. Convened by: Andrea D'Avella (IT), Etienne Burdet (UK), Auke Ijspeert (CH). Location: Certaldo (Italy), 8-11 April 2009.
+
+\end{itemize}
+
+%-------------------------------------------------------------------
+%	ORGANIZED
+%-------------------------------------------------------------------
+
+\section{Selected organised international events}
+
+\begin{itemize}
+
+\item July 2015. Organisation of the workshop at RSS 2015 (Robotics, Science and Systems). July 13-17 2015, Sapienza University Rome. ``Towards a unifying framework for whole-body and manipulation control''. Coordinators: Francesco Nori, Maximo A. Roa, Daniele Pucci, Edoardo Farnioli, Marco Gabiccini, Antonio Bicchi.
+\item June 2014. Organisation of the workshop ``iCub \& friends'' celebration of the 10th anniversary of the iCub project. Workshop at the IEEE International Conference in Robotics and Automation (ICRA 2014). Hong Kong, June 5th 2014. Organisers: L. Natale, F.Nori, N. Tsagarakis, G. Metta.
+\item October 2012. Organisation of the workshop on ``Optimality Principles and Adaptation in Humanoid Robotic Control'' at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2012). Vilamoura, Algarve, Portugal. Organisers: Serena Ivaldi, Bastien Berret, Francesco Nori, Olivier Sigaud.
+
+\end{itemize}
+
+%-------------------------------------------------------------------
+%	PATENTS
+%-------------------------------------------------------------------
+
+\section{International patents}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Patent & \textbf{Variable-stiffness actuator with passive disturbance rejection}\\
+\gray Type & \textbf{European patent application}\\
+\gray Number & \textbf{EP 13785613.4}\\
+\gray Date & \textbf{August 23, 2013}\\
+\gray Inventors & {F. Nori, B. Berret, L. Fiorio, A. Parmiggiani, G. Sandini}
+\end{tabularx}
+A novel type of variable stiffness actuator (VSA) for actuating a robot joint. The actuator possesses a fundamental feature, nominally the ability to augment passive disturbance rejection. 
+
+
+%-------------------------------------------------------------------
+%	EDITORIAL ACTIVITIES
+%-------------------------------------------------------------------
+
+\section{Editorial activities}
+
+
+\begin{tabularx}{\textwidth}{ | X p{0.5\textwidth} X | }
+  \hline
+  \gray Year & Journal/Conference & Role \\
+  \hline
+  2011  & First joint IEEE international conference on development and learning and on epigenetic robotics (ICDL-EPIROB 2011). 24-27 August 2011.  & Publication chair  \\
+  \hline
+  2012 - Present  & International journal Humanoid Robotics (IJHR).   & Editor \\
+  \hline
+  2014 - Present  & Frontiers in Robotics and AI, ``Humanoid robotics''.   & Associate editor  \\
+  \hline  
+  2014  & Fourth joint IEEE international conference on development and learning and on epigenetic robotics (ICDL-EPIROB 2014). 13-16 Octboer 2014.  & Publication chair  \\
+  \hline  
+\end{tabularx}
+
+
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\section{Teaching experience}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+
+\gray Course & \textbf{Linear and nonlinear control theory}\\
+\gray Level & \textbf{Ph.D. candidates at the Istituto Italiano di Tecnologia}\\
+\gray Period & \textbf{2007 --- Present}\\
+\gray Institution & \textbf{Universit\`a degli studi di Genova} \hfill Italy\\
+\gray Duration & \textbf{$\sim$ 50 hours of frontal teaching} \\
+& Role: main teacher. Topics: linear and nonlinear systems, Lyapunov stability, feedback control, optimal control, calculus of variations, linear quadratic regulator. Total hours of lecture: November-December 2014 (16 hours); July 2013 (10 hours); July 2011 (10 hours); October 2009 (10 hours); June 2007 (10 hours). \\
+
+\gray Course & \textbf{Robotica antropomorfa (anthropomorphic robots)}\\
+\gray Level & \textbf{M.Sc. candidates}\\
+\gray Period & \textbf{2007 --- 2013}\\
+\gray Institution & \textbf{Universit\`a degli studi di Genova} \hfill Italy\\
+\gray Duration & \textbf{$\sim$ 200 hours of frontal teaching} \\
+& Role: main teacher. Topics: calculus of variations, linear and non-linear optimal control, Newtonian and Lagrangian mechanics, forward/inverse kinematics and dynamics, position, force, impedance and hybrid control, manipulation constraints and modelling. Total hours of lecture: first semester 2007/2008 (25 hours); first semester 2008/2009 (25 hours); first and second semester 2009/2010 (50 hours); first semester 2010/2011 (50 hours); second semester 2010/2011 (50 hours); second semester 2012/2013 (30 hours). \\
+
+\gray Course & \textbf{Controllo digitale (basics in automation)}\\
+\gray Level & \textbf{B.Sc. candidates}\\
+\gray Period & \textbf{2002 --- 2005}\\
+\gray Institution & \textbf{Universit\`a degli studi di Padova} \hfill Italy\\
+\gray Duration & \textbf{$\sim$ 20 hours of frontal teaching} \\
+& Role: teaching assistant. Total hours of lecture: second semester 2002/2003 (14 hours); first semester 2004/2005 (10 hours). \\
+
+\gray Course & \textbf{Fondamenti di automatica (basics in automation)}\\
+\gray Level & \textbf{B.Sc. candidates}\\
+\gray Period & \textbf{2001 --- 2003}\\
+\gray Institution & \textbf{Universit\`a degli studi di Padova} \hfill Italy\\
+\gray Duration & \textbf{$\sim$ 20 hours of frontal teaching} \\
+
+& Role: teaching assistant. Total hours of lecture: second semester 2001/2002 (12 hours); first semester 2002/2003 (6 hours).
+\end{tabularx}
+%-------------------------------------------------------------------
+%	MENTORING ACTIVITIES
+%-------------------------------------------------------------------
+
+\section{Selected mentoring activities}
+
+\begin{tabularx}{\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+
+\gray Ph.D. Student & \textbf{Alessandra Sciutti}\\
+\gray Period & \textbf{2007---2010}\\
+& Currently researcher at the Istituto Italiano di Tecnologia, Robotics, Brain and Cognitive Sciences Department (RBCS), working with of Prof. Giulio Sandini. \\
+\gray Ph.D. Student & \textbf{Matteo Fumagalli}\\
+\gray Period & \textbf{2007---2011}\\
+& Currently post doctoral researcher at the University of Twente (Netherlands), working with Prof. Stefano Stramigioli. \\
+\gray Ph.D. Student & \textbf{Serena Ivaldi (co-supervision with Giorgio Metta)}\\
+\gray Period & \textbf{2007---2011}\\
+& Currently CR2 researcher in INRIA Nancy Grand-Est (France), working in the project-team LARSEN, directed by Francois Charpillet. \\
+\gray Ph.D. Student & \textbf{Andrea Del Prete (co-supervision with Lorenzo Natale)}\\
+\gray Period & \textbf{2010---2013}\\
+& Currently post doctoral researcher at LAAS-CNRS in Toulouse (France), working in the Gepetto Team, with Nicolas Mansard. \\
+\end{tabularx}
+
+%-------------------------------------------------------------------------------
+%	REFERENCES
+%-------------------------------------------------------------------------------
+
+\section{References}
+\begin{itemize}
+\item Prof. Giulio Sandini, director of the Robotics Brain and Cognitive Sciences Department, Genoa. Address: Viale Morego 30, 16163 Genoa, Italy. Telephone: + 39 010 71781 416. {\Large\Letter}: giulio.sandini@iit.it.
+
+\item Prof. Giorgio Metta, director of the iCub Facility, Fondazione Istituto Italiano di Tecnologia. Address: Via Morego 30, 16163 Genoa, Italy. Telephone: + 39 010 71781 416. {\Large\Letter}: giorgio.metta@iit.it.
+
+\item Prof. Ruggero Frezza, Department of Information Engineering, University of Padova. Address: Via Gradenigo 6/B, 35131 Padova, Italy. Telephone: +39 049 827 7704. Fax: +39 049 827 7699. {\Large\Letter}: frezza@dei.unipd.it.\item Prof. Stefano Soatto, Computer Science Department, University of California, Los Angeles Address: Boelter hall 3531d Los Angeles, CA 90095-1596. Telephone: (310) 825-4840. Assistant: +1 (310) 825-1322. {\Large\Letter}: soatto@cs.ucla.edu.
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+%	Languages
+%-------------------------------------------------------------------------------
+
+\section{Languages}
+\begin{center}
+\begin{tabular}{r|c|c|c|c|}
+\multicolumn{1}{r}{}
+ &  \multicolumn{1}{c}{speaking}
+ & \multicolumn{1}{c}{listening}  
+ &  \multicolumn{1}{c}{writing}
+ & \multicolumn{1}{c}{reading} \\
+\cline{2-5}
+Italian & Mother tongue & Mother tongue & Mother tongue & Mother tongue\\
+\cline{2-5}
+English & Fluent & Good & Fluent & Good$^\dagger$ \\
+\cline{2-5}
+\end{tabular}
+\end{center}
+
+\noindent
+$^\dagger$Francesco Nori contributed to the translation from English to Italian of the textbook ``Feedback Control of Dynamic Systems''. Authors: Gene F. Franklin J. David Powell Abbas Emami-Naeini. Publisher: Prentice Hall. Translation: ``Controllo a retroazione di sistemi dinamici'', edited by EdiSES.
+
+%-------------------------------------------------------------------------------
+
+\newpage \appendix
+
+\section{Complete list of invited talks}
+
+\begin{enumerate}
+\item November 2014. Invited talk at the ``Cognitive Humanoid Robotics Research''workshop, held within the 2014 IEEE-RAS international conference on humanoid robots (Humanoids 2014). Madrid, Spain. Organisers: T. Asfour, A. Bajart, C. Huet, F. Mastroddi, G. Metta.\item October 2014. Invited speaker at the Journ\'ees Nationales du GdR Robotique 2014, held at Grand amphith\'e\^atre du Centre Arts et M\'etiers ParisTech, 151-155 boulevard de l'H\^opital, 75013 Paris. 30 October 2014.\item September 2014. Invited teacher at the first KoroiBot Summer School, held in Heidelberg from September 22nd to September 26th 2014.\item September 2014. Invited talk at the workshop on ``Whole-body Control for Robots in the Real World''. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2014) . Organizers: F.L. Moro, M. Gienger, O. Khatib, E. Yoshida.\item November 2013. Invited talk at the tutorial on ``Online and Offline Optimization for Humanoid Robots''at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013). Tokyo, Japan. Organizers: Eiichi Yoshida, Katja Mombaur, Tom Erez, Yuval Tassa.\item November 2013. Invited talk at the tutorial on ``Robotics-based Methods for the Identification, Recognition, and Synthesis of Human Motions''at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013). Tokyo, Japan. Organizers: Emel Demircan, Gentiane Venture.\item May 2013. Invited talk at the workshop on ``Whole-body Compliant Dynamical Contacts for Humanoid Robotics''at the 2013 IEEE International Conference on Robotics and Automation (ICRA 2013), Karlsruhe, Germany.\item November 2012. Invited talk at Robotica 2012. Milano, fiera Milano Rho. Title of the talk: ``Controllo e interazione di iCub''. Padiglione 8, Sala Asimov. Title of the sessions: ``Testa e corpo di iCub''.\item November 2012. Invited talk at the workshop on ``Generating Optimal Paths in Humanoid and Industrial Robotics''at Humanoids 2012, 2012 IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS 2012). Business Innovation Center Osaka, Japan. Title of the talk: ``Stochastic optimal control for planning movements with Variable Impedance Actuators''.\item June 2012. Invited talk at the ``Modeling Locomotion of Humans and Humanoids''organized jointly with the IEEE International Conference on Biomedical Robotics and Biomechatronics. Location: Rome, Italy, 24-27 June 2012.\item September 2011. Invited talk at the ``iCub \& locomotion workshop''organized jointly with CLAWAR 2011, 14th International Conference on Climbing and Robots and Support Technologies for Mobile Machines. Location: Paris, France, 6-8 September 2011.\item September 2011. Invited talk at the ``Dynamic Models and Optimal Control of Humanoid Robots workshop''organized jointly with the 11th IEEE-RAS International Conference on Humanoid Robots. Location: Bled, Slovenia, 26-28 September 2011.\item November 2009. Invited talk at the event: ``Il mio amico robot''. Funded by SIRI (Associazione Italiana di Robotica) whitin the Hi Tech Expo 2010. Milano, Centro Congressi, November 26, 2009.\item April 2009. Invited speaker at the exploratory workshop on ``Modularity for versatile motor learning''. Funded by the European Science Foundation. Convened by: Andrea D'Avella (IT), Etienne Burdet (UK), Auke Ijspeert (CH). Location: Certaldo (Italy), 8-11 April 2009.\item June 2006. Invited speaker at the 4th European School of Neuro-IT and Neuroengineering, University of Genoa, Italy. Title of the lecture: ``Adaptive combination of motor primitives''.
+\end{enumerate}
+
+\section{Complete list of organised international events}
+
+\begin{enumerate}
+
+\item July 2015. Organisation of the workshop at RSS 2015 (Robotics, Science and Systems). July 13-17 2015, Sapienza University Rome. ``Towards a unifying framework for whole-body and manipulation control''. Coordinators: Francesco Nori, Maximo A. Roa, Daniele Pucci, Edoardo Farnioli, Marco Gabiccini, Antonio Bicchi.
+
+\item November 2014. Organisation of the workshop ``One day with a humanoid robot: a crash course on the iCub software tools''. Workshop held at the 2014 IEEE-RAS international conference on humanoid robots (Humanoids 2014). Organisers: L. Natale, F.Nori, U. Pattacini, V. Tikhanoff, M. Randazzo, G. Metta.
+
+\item July 2014. Organiser of the iCub summer school (Veni Vidi Vici 2014). The school was held in Sestri Levante, Italy, July 21-30 2014. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Vadim Tikhanoff, Ugo Pattacini. 
+\item June 2014. Organisation of the workshop ``iCub \& friends'' celebration of the 10th anniversary of the iCub project. Workshop at the IEEE International Conference in Robotics and Automation (ICRA 2014). Hong Kong, June 5th 2014. Organisers: L. Natale, F.Nori, N. Tsagarakis, G. Metta.
+
+\item November 2013. Organisation of the workshop on ``Towards Social Humanoid Robots: What makes interaction human-like?'' at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013). Tokyo, Japan. Organisers: Lorenzo Jamone, Alessandra Sciutti, Francesco Nori, Alexandre Bernardino, Giulio Sandini.
+
+\item July 2013. Organiser of the iCub summer school (Veni Vidi Vici 2013). The school was held in Sestri Levante, Italy, July 15-24 2013. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Vadim Tikhanoff, Ugo Pattacini, Paul Fitzpatrick. 
+\item October 2012. Organisation of the workshop on ``Optimality Principles and Adaptation in Humanoid Robotic Control'' at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2012). Vilamoura, Algarve, Portugal. Organisers: Serena Ivaldi, Bastien Berret, Francesco Nori, Olivier Sigaud.
+
+\item July 2012. Organiser of the iCub summer school (Veni Vidi Vici 2012). The school was held in Sestri Levante, Italy, July 18-27 2012. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Alessandro Scalzo, Ugo Pattacini, Paul Fitzpatrick. 
+
+\item July 2011. Organiser of the iCub summer school (Veni Vidi Vici 2011). The school was held in Sestri Levante, Italy,  July 18-28 2011. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Alessandro Scalzo, Ugo Pattacini, Paul Fitzpatrick. 
+
+\item July 2010. Organiser of the iCub summer school (Veni Vidi Vici 2010). The school was held in Sestri Levante, Italy,  July 19-28 2010. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Alessandro Scalzo, Ugo Pattacini, Paul Fitzpatrick. 
+
+\item July 2009. Organiser of the iCub summer school (Veni Vidi Vici 2009). The school was held in Sestri Levante, Italy, July 20-29 2009. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Alessandro Scalzo, Ugo Pattacini, Paul Fitzpatrick. 
+
+\item July 2008. Organiser of the iCub summer school (Veni Vidi Vici 2008). The school was held in Sestri Levante, Italy, July 21-30 2008. Main organisers and instructors: Giorgio Metta, Lorenzo Natale, Francesco  Nori, Alessandro Scalzo, Ugo Pattacini, Paul Fitzpatrick. 
+\end{enumerate}
+
+\section{Complete list of mentoring activities}
+
+\begin{enumerate}
+
+\item Lorenzo De Michieli (co-supervision with Prof. A. Pini Prato). Period: 2007---2008. Currently hired as manager of the technology transfer area at the Istituto Italiano di Tecnologia, Genoa, Italy.
+
+\item Alessandra Sciutti. Period: 2007---2010. Currently researcher at the Istituto Italiano di Tecnologia, Robotics, Brain and Cognitive Sciences Department (RBCS), working with of Prof. Giulio Sandini.
+
+\item Matteo Fumagalli. Period: 2007---2011. Currently post doctoral researcher at the University of Twente (Netherlands), working with Prof. Stefano Stramigioli.
+
+\item Angelo Emanuele Fiorilla (co-supervision with Prof. Giulio Sandini). Period: 2007---2010. Currently hired as consultant by ``Akka Technologies''.
+
+\item Serena Ivaldi (co-supervision with Giorgio Metta). Period: 2007---2011. Currently CR2 researcher in INRIA Nancy Grand-Est (France), working in the project-team LARSEN, directed by Francois Charpillet.
+
+\item Ugo Pattacini. Period: 2008---2010. Currently post doctoral researcher at the iCub Facility, Istituto Italiano di Tecnologia, working with Giorgio Metta.
+
+\item Cristiano Alessandro (co-supervision with Prof. Rolf Pfeifer). Period: 2009---2013. Currently hired as postdoctoral researcher at the Sensory-Motor Systems Laboratory, ETH Zurich.
+
+\item Francesca Stramandinoli (co-supervision with Prof. Angelo Cangelosi). Period: 2010---2013. Currently hired as postdoctoral researcher at the Robotics, Brain and Cognitive Sciences Department, Istituto Italiano di Tecnologia, Genoa, Italy.
+
+\item Andrea Del Prete (co-supervision with Lorenzo Natale). Period: 2010---2013. Currently post doctoral researcher at LAAS-CNRS in Toulouse (France), working in the Gepetto Team, with Nicolas Mansard.
+
+\item Laura Patan\`e (co-supervision with Alessandra Sciutti). Period: 20011---2014. Currently hired by ``ab medica s.p.a.'' as clinical specialist for  the `da Vinci Surgical System'.
+
+\item Luca Fiorio. Period: 2011---2015. Currently hired as postdoctoral researcher at the iCub Facility, Istituto Italiano di Tecnologia, Genoa, Italy.
+
+\end{enumerate}
+
+\section{Complete list of dissemination activities}
+
+\begin{enumerate}
+
+\item November 25--27, 2008. icub exposition at ICT2008 (Information and Communication Technology). Lyon, France.
+
+\item June 10--13, 2008. iCub exposition at Automatica 2008 on invitation of the European commission. Munich, Germany.
+\item July 11--17, 2009. iCub exhibition at IJCAI 2009 (twenty-first International Joint Conference on Artificial Intelligence). Pasadena Conference Center, California, USA. 
+
+\item October 23--November 1, 2009. iCub exposition to a vast public during a week event held in Genoa at the ``Festival della Scienza''. Genova, Italy. 
+
+\item April 17--21, 2010. iCub exposition at the Hannover Messe. Hannover, Germany. Italy was the main partner country and the iCub humanoid was officially invited by the Italian Ministry of Innovation. The iCub was officially introduced to Angela Merkel.\item April 14--18, 2010. Participation to the Campus Party Europe, Madrid, Spain. Event organised to celebrate the end of the Spanish six month Presidency of the Council of the European Union. iCub officially presented to Neelie Kroes, vice-president of the European Commission, and Cristina Garmendia, Minister for Science and Innovation for the Government of Spain.\item May 4, 2010. Welcome ceremony to President Giorgio Napolitano at the Istituto Italiano di Tecnologia, Genoa, Italy. I have been among the organisers of the welcome ceremony to the Italian President Giorgio Napolitano. In particular, I was responsible for realizing a sequence of movements with the iCub humanoid which has been programmed to hand an IIT brochure to the president. \item September 21--22, 2010. Participation to the event ``Tutti a scuola'', Palazzo del Quirinale, Roma, Italy. On explicit invitation from the organisation committee of the national school year opening ceremony, the iCub humanoid entered to the Palazzo del Quirinale where the ceremony was held.
+
+\item March 21, 2011. Presentation of the iCub robot to a marketing delegation of FIAT Automobiles S.p.A. 21 March 2011, Torino, Italy.\item May 4--6, 2011. Participation with the iCub to the event FET11, the European Future Technologies Conference and Exhibition, 4-6 May 2011, Budapest, Hungary. Several demonstrations were run during three entire days of conference and remarkably the Robocom exhibit won the best exhibit award.\item September 25--30, 2011. Participation with the iCub to IROS2011, International Conference on Intelligent Robots and Systems, , San Francisco, California.\item November 24, 2011. Participation with the iCub to the FET Flagships Pilots Midterm Conference. Warsaw, Poland. During this event as members of the RoboCom FET-Flagship pilot we presented the recent advancement on the iCub humanoid platform with particular focus on the recently developed artificial skin.\item December 1--4, 2011. Participation with the iCub to the Robotville Festival at the London Science Museum. London, United Kingdom. The event was exceptional in terms of exposition to the media; several television and journals visited the iCub exhibit: BBC, CNN, The Sun, Chicago Tribune and Washington Post just to cite a few.
+
+\item January 30--February 3, 2012. iCub@MIT. iCub on the MIT campus: 46-5189. Participation to the IAP (Independent Activities Period) event with the iCub. Boston, United States of America.
+\item March 28, 2012. iCub demo at the European Parliament, hosted by the Member of the European Parliament Ioannis Tsoukalas. Bruxelles, Belgium.
+\item May 3--4, 2012. iCub demo at the Festival Robotique \url{http://festivalrobotique.epfl.ch}. Lausanne, Switzerland.
+\item May 20--24, 2012. iCub demo at Automatica 2012, hosted at the Harmonic Drive (www.harmonicdrive.de) booth. Munich, Germany.
+\item September 20--22, 2012. iCub demo at the eighth World Conference on the Future of Science: ``Nanoscience Society''. San Giorgio Maggiore, Venice, Italy.
+\item November 7--9, 2012. iCub demo at Robotica 2012 (fiera Milano Rho). Milano, Italy.
+
+\item March 19--21 2013. iCub @ Innorobo. The iCub robot was exposed at Innorobo in Lyon. The event was a joint event with the European Robotics Forum 2013. Lyon, France.
+
+\item  May 6--10, 2013. iCub @ ICRA 2013. The IIT was institutional sponsor at the 2013 IEEE International Conference on Robotics and Automation Karlsruhe. In this occasion the robot iCub performed several demos at the IIT stand for the entire five days.
+
+\item  July 15--24, 2013. iCub @ VVV 2013. The CoDyCo project sponsored the annual iCub summer school in Sestri Levante. The event was attended by most of my collaborators. 
+
+\item October 26--28, 2013. iCub @ Festival della Scienza. Exhibition: Anthropomorphic Technology. iCub has been performing several demos at the exhibition. Demos were specifically thought for kids between 5 and 10 years of age.
+
+\item March 12--14, 2014. iCub demonstration at the EU robotics forum. Rovereto, Italy. The Istituto Italiano di Tecnologia was massively present at the European Robotics Forum 2014. 
+
+\item June 3--6, 2014. iCub demonstration at the trade fair for automation and mechatronics (Automatica). Munich, Germany. 
+
+\item October 3--5, 2014. iCub demonstration at Maker Faire. Rome, Italy. The iCub robot was exposed at Maker Faire in Rome. 
+
+\item October 7, 2014. iCub live on national television channel (Rai 2). The iCub was presented during the  tv-show ``I fatti vostri'' with the participation of Dr. Daniele Pucci.
+
+\item November 18--20, 2014. iCub demonstration at the IEEE-RAS international conference on humanoid robots (Humanoids 2014), Madrid Spain. In conjunction with an organised workshop a fully functional iCub was available at the Humanoids 2014 international conference.
+
+\item September 12--14, 2014. iCub demonstration at the Festival della comunicazione, iCub was demonstrated at the event, held in Camogli with a significant contribution from the Istituto Italiano di Tecnologia. Genova, Italy. 
+\end{enumerate}
+
+
+\begin{thebibliography}{108}
+
+\bibitem{Alessandro+Nori2012} Alessandro C. \& Nori F. 2012, {\textquoteleft}Identification of Synergies by Optimization of Trajectory Tracking Tasks{\textquoteright}, \textit{IEEE International Conference on Biomedical Robotics and Biomechatronics (Biorob2012)}, Rome, Italy, June 24-27, 2012.
+
+\bibitem{Alessandro_etal2013} Alessandro C., Carabjal J.P., d{\textquoteright}Avella A. \& Nori F. 2013, {\textquoteleft}Computational implications of the hypothesis of muscle synergies{\textquoteright}, \textit{Computational Motor Control Workshop}, Beer-Sheva, Israel, May 9, 2013.
+
+\bibitem{Alessandro_etal2013_2} Alessandro C., Delis I., Nori F., Panzeri S. \& Berret B. 2013, {\textquoteleft}Muscle synergies in neuroscience and robotics: from input-space to task-space perspectives{\textquoteright}, \textit{Frontiers in Computational Neuroscience}, vol. 7,no. 43, pp. 1--16.
+
+\bibitem{Baud-Bovy_etal2014} Baud-Bovy G., Morasso P., Nori F., Sandini G. \& Sciutti A. 2014, {\textquoteleft}Human Machine Interaction and Communication in Cooperative Actions{\textquoteright}, \textit{Bioinspired Approaches for Human-Centric Technologies}, Springer International Publishing pp.241-268, .
+
+\bibitem{Berret_etal2011} Berret B., Chiovetto E., Nori F. \& Pozzo T. 2011, {\textquoteleft}Reaching to a bar: how do we handle target redundancy?{\textquoteright}, \textit{21st Annual conference neural control of movement}, San Juan, Puerto Rico, April 26-May 1, 2011.
+
+\bibitem{Berret_etal2011_2} Berret B., Chiovetto E., Nori F. \& Pozzo T. 2011, {\textquoteleft}Evidence for composite cost functions in arm movement planning: an inverse optimal control approach{\textquoteright}, \textit{PLoS Computational Biology}, vol. 7,no. 10, e1002183.
+
+\bibitem{Berret_etal2011_3} Berret B., Chiovetto E., Nori F. \& Pozzo T. 2011, {\textquoteleft}The manifold reaching paradigm: how do we handle target redundancy?{\textquoteright}, \textit{Journal of Neurophysiology}, vol. 106,no. 4, pp. 2086--2102.
+
+\bibitem{Berret_etal2011_4} Berret B., Ivaldi S., Nori F. \& Sandini G. 2011, {\textquoteleft}Stochastic optimal control with variable impedance manipulators in presence of uncertainties and delayed feedback{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2011)}, pp.4354-4359,  San Francisco, USA, September 25-30, 2011.
+
+\bibitem{Berret_etal2013} Berret B., Iyung O. \& Nori F. 2013, {\textquoteleft}Open-loop stochastic optimal control of a passive noise-rejection variable stiffness actuator: application to unstable tasks{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013)}, Tokyo, Japan, November 3-7, 2013.
+
+\bibitem{Berret_etal2011_5} Berret B., Nori F., Metta G. \& Sandini G. 2011, {\textquoteleft}On the role of muscle cocontraction in planning movements: implications on novel robotic actuators{\textquoteright}, \textit{ICRA 2011, Workshop on {\textquotedblleft}Bio-mimetic and Hybrid Approaches to Robotics{\textquotedblright}}, Shanghai, China, May 9-13, 2011.
+
+\bibitem{Berret_etal2012} Berret B., Sandini G. \& Nori F. 2012, {\textquoteleft}Design principles for muscle-like variable impedance actuators with noise rejection property via co-contraction{\textquoteright}, \textit{IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2012)}, Osaka, Japan, November 29- December 1, 2012.
+
+\bibitem{Bisio_etal2014} Bisio A., Sciutti A., Nori F., Metta G., Fadiga L., Sandini G. \& Pozzo T. 2014, {\textquoteleft}Motor Contagion during Human-Human and Human-Robot Interaction{\textquoteright}, \textit{PlosOne}, vol. 9,no. 8, e106172.
+
+\bibitem{Broz_etal2014} Broz F., Nehaniv C., Belpaeme T., Bisio A., Dautenhahn K., Fadiga L., Ferrauto T., Fischer K., Foester F., Gigliotta O., Griffiths S.S., Lehmann H., Lohan K.S., Lyon C., Marocco D., Massera G., Metta G., Mohan V., Morse A., Nolfi S., Nori F., Peniak M., Pitsch K., Rohlfing K.J., Sagerer G., Sato Y., Saunders J., Schillingmann L., Sciutti A., Tikhanoff V., Wrede B., Zeschel A. \& Cangelosi A. 2014, {\textquoteleft}The ITALK Project: A Developmental Robotics Approach to the Study of Individual, Social, and Linguistic Learning.{\textquoteright}, \textit{Topics in Cognitive Science}.
+
+\bibitem{Cangelosi_etal2010} Cangelosi A., Metta G., Sagerer G., Nolfi S., Nehaniv C., Fischer K., Tani J., Belpaeme T., Sandini G., Nori F., Fadiga L., Wrede B., Rohlfing K., Tuci E., Dautenhahn K., Saunders J. \& Zeschel A. 2010, {\textquoteleft}Integration of Action and Language Knowledge: A Roadmap for Developmental Robotics{\textquoteright}, \textit{IEEE Transactions on Autonomous Mental Development}, vol. 2,no. 4, pp. 167--195.
+
+\bibitem{Chiovetto_etal2008} Chiovetto E., Nori F., Sandini G. \& Pozzo T. 2008, \textit{Muscle synergies as a tool to study coordination between voluntary movements and posture} Washington DC, USA, November 15-19, 2008.
+
+\bibitem{Chiovetto_etal2009} Chiovetto E., Nori F. \& Pozzo T. 2009, \textit{A triphasic muscle pattern as robust  strategy to control a variety of different whole-body pointing movements}, 4th edn, Editing House of Bulgaria Academy of Sciences, Verna, Bulgaria, September 2009.
+
+\bibitem{Ciliberto_etal2014} Ciliberto C., Fiorio L., Maggiali M., Natale L., Rosasco L., Metta G., Sandini G. \& Nori F. 2014, {\textquoteleft}Exploiting global force torque measurements for local compliance estimation in tactile arrays{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2014)}, Chicago, USA, September 14-18, 2014.
+
+\bibitem{Ciliberto_etal2011} Ciliberto C., Pattacini U., Natale L., Nori F. \& Metta G. 2011, {\textquoteleft}Reexamining Lucas-Kanade Method for Real-Time Independent Motion Detection: Application to the iCub Humanoid Robot{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2011)}, IEEE pp. 4154-4160, San Francisco, California. September 25--30, 2011.
+
+\bibitem{Courtney_etal2009} Courtney P., Michel O., Cangelosi A., Tikhanoff V., Metta G., Natale L., Nori F. \& Kernbach S. 2009, {\textquoteleft}Cognitive Systems Platforms using Open Source{\textquoteright}, in R. Madhavan, E. Tunstel \& E. Messina (eds.),\textit{International Workshop on Performance Evaluation and Benchmarking of Intelligent Systems}, Springer pp.139-160, Berlin Heidelberg.
+
+\bibitem{DeMichieli_etal2008} De Michieli L., Nori F., Sandini G. \& Piniprato P. 2008, {\textquoteleft}Study on Humanoid Robot Systems: an Energy Approach{\textquoteright}, \textit{8th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2008)}, pp.219-226,  Daejeon, Korea, December 1-3, 2008.
+
+\bibitem{DegallierS._etal2008} Degallier S., Righetti L., Natale L., Nori F., Metta G. \& Ijspeert A. 2008, {\textquoteleft}A modular bio-inspired architecture for movement generation for the infant-like robot iCub{\textquoteright}, \textit{IEEE RAS / EMBS International Conference on Biomedical Robotics and Biomechatronics}, pp.795-800,  Scottsdale, Arizona, October 19-22, 2008.
+
+\bibitem{DelPrete_etal2011} Del Prete A., Denei S., Natale L., Mastrogiovanni F., Nori F., Cannata G. \& Metta G. 2011, {\textquoteleft}Skin Spatial Calibration Using Force/Torque Measurements{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2011)}, pp.3694-3700, San Francisco, California. September 25--30, 2011.
+
+\bibitem{DelPrete_etal2014} Del Prete A., Mansard N., Nori F., Metta G. \& Natale L. 2014, {\textquoteleft}Partial Force Control of Constrained Floating-Base Robots{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2014)}, Chicago, Illinois, September 14--18, 2014.
+
+\bibitem{DelPrete_etal2012} Del Prete A., Natale L., Nori F. \& Metta G. 2012, {\textquoteleft}Contact Force Estimations Using Tactile Sensors and Force/Torque Sensors{\textquoteright}, \textit{HRI 2012 Workshop on Advances in Tactile Sensing and Touch based Human-Robot Interaction}, Boston, MA, March 5, 2012.
+
+\bibitem{DelPrete_etal2012_2} Del Prete A., Nori F., Metta G. \& Natale L. 2012, {\textquoteleft}Control of Contact Forces: the Role of Tactile Feedback for Contact Localization{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2012)}, Vilamoura, Algarve, Portugal, October 7-12, 2012.
+
+\bibitem{DelPrete_etal2015} Del Prete A., Nori F., Metta G. \& Natale L. 2015, {\textquoteleft}Prioritized motion force control of constrained fully actuated robots: Task Space Inverse Dynamics{\textquoteright}, \textit{Robotics and Autonomous Systems}, vol. 63, no. 1, pp. 150--157.
+
+\bibitem{DelPrete_etal2014_2} Del Prete A., Romano F., Natale L., Metta G., Sandini G. \& Nori F. 2014, {\textquoteleft}Prioritized Optimal Control{\textquoteright}, \textit{IEEE International Conference on Robotics and Automation (ICRA2014)}, IEEE, Hong Kong, China, May 31-June 7, 2014, 2014.
+
+\bibitem{Dominey_etal2008} Dominey P.F., Metta G., Natale L. \& Nori F. 2008, {\textquoteleft}Anticipation and Initiative in Human-Humanoid Interaction{\textquoteright}, \textit{8th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2008)}, pp.693-699,  Daejeon, Korea, December 1-3, 2008.
+
+\bibitem{Dominey_etal2008_2} Dominey P.F., Metta G., Nori F. \& Natale L. 2008, {\textquoteleft}Learning Through Coaching in Cooperative Side-by-Side Human-Humanoid Interaction{\textquoteright}, \textit{Workshop on imitation and Coaching in Humanoid Robots, at 8th IEEE-RAS Conference on Humanoid Robots}, Daejeon, Korea, December 1st, 2008.
+
+\bibitem{Eljaik_etal2013} Eljaik J., Li Z., Randazzo M., Parmiggiani A., Metta G., Tsagarakis N. \& Nori F. 2013, {\textquoteleft}Quantitative Evaluation of Standing Stabilization Using Stiff and Compliant Actuators{\textquoteright}, \textit{Robotics: Science and Systems 2013}, Berlin, Germany, June 24-28, 2013.
+
+\bibitem{Fiorilla_etal2011} Fiorilla A.E., Nori F. \& Masia L. Sandini G. 2011, {\textquoteleft}Finger Impedance Evaluation by means of Hand Exoskeleton{\textquoteright}, \textit{Annals of Biomedical Engineering}, vol. 39,no. 12, pp. 2945--2954.
+
+\bibitem{Fiorilla_etal2009} Fiorilla A.E., Tsagarakis N., Nori F. \& Sandini G. 2009, {\textquoteleft}Design of a 2-Finger Hand Exoskeleton for finger stiffness measurements{\textquoteright}, \textit{Journal of Applied Bionics and Biomechanics}, vol. 6,no. 2, pp. 217--228.
+
+\bibitem{Fiorio_etal2013} Fiorio L., Romano F., Parmiggiani A., Sandini G. \& Nori F. 2013, {\textquoteleft}On the effects of internal stiction in pnrVIA actuators{\textquoteright}, in IEEE (ed.),\textit{IEEE/RAS International Conference of Humanoids Robotics (HUMANOIDS2013)}, Atlanta, GA, USA, October 15-17, 2013.
+
+\bibitem{Fiorio_etal2014} Fiorio L., Romano F., Parmiggiani A., Sandini G. \& Nori F. 2014, {\textquoteleft}Stiction Compensation in Agonist-Antagonist Variable Stiffness Actuators{\textquoteright}, \textit{2014 Robotics: Science and Systems Conference}, Berkeley, California, USA, July 12-16, 2014.
+
+\bibitem{Fiorio_etal2012} Fiorio L., Parmiggiani A., Berret B., Sandini G. \& Nori F. 2012, {\textquoteleft}pnrVSA: human-like actuator with non-linear springs in agonist-antagonist configuration{\textquoteright}, \textit{IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2012)}, Osaka, Japan, November 29- December 1, 2012.
+
+\bibitem{Fumagalli_etal2010} Fumagalli M., Gijsberts A., Ivaldi S., Jamone L., Metta G., Natale L., Nori F. \& Sandini G. 2010, {\textquoteleft}Learning to Exploit Proximal Force Sensing: a Comparison Approach{\textquoteright}, in O. Sigaud \& J. Peters (eds.),\textit{From Motor Learning to Interaction Learning in Robots},  Studies in Computational Intelligence, vol. 264, Springer-Verlag pp.159-177, .
+
+\bibitem{Fumagalli_etal2012} Fumagalli M., Ivaldi S., Randazzo M., Natale L., Metta G., Sandini G. \& Nori F. 2012, {\textquoteleft}Force feedback exploiting tactile and proximal force/torque sensing. Theory and implementation on the humanoid robot iCub.{\textquoteright}, \textit{Autonomous Robots}, vol. 33,no. 4, pp. 381--398.
+
+\bibitem{Fumagalli_etal2009} Fumagalli M., Jamone L., Metta G., Natale L., Nori F., Parmiggiani A., Randazzo M. \& Sandini G. 2009, {\textquoteleft}A Force Sensor for the Control of a Human-like Tendon Driven Neck{\textquoteright}, \textit{9th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2009)}, pp.478-485,  Paris, France, December 7-10, 2009.
+
+\bibitem{Fumagalli_etal2010_2} Fumagalli M., Randazzo M., Nori F., Natale L., Metta G. \& Sandini G. 2010, {\textquoteleft}Exploiting Proximal F/T Measurements for the iCub Active Compliance{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2010)}, pp.1870-1876,  Taipei, Taiwan, October 18-22, 2010.
+
+\bibitem{Gori_etal2012} Gori I., Pattacini U., Nori F., Metta G. \& Sandini G. 2012, {\textquoteleft}DForC: a Real-Time Method for Reaching, Tracking and Obstacle Avoidance in Humanoid Robots{\textquoteright}, \textit{IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2012)}, IEEE pp.544-551, , Osaka, Japan, November 29 - December 1, 2012.
+
+\bibitem{Ivaldi_etal2010} Ivaldi S., Fumagalli M., Nori F., Baglietto M., Metta G. \& Sandini G. 2010, {\textquoteleft}Approximate optimal control for reaching and trajectory planning in a humanoid robot{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2010)}, pp.1290-1296,  Taipei, Taiwan, October 18-22, 2010.
+
+\bibitem{Ivaldi_etal2011} Ivaldi S., Fumagalli M., Randazzo M., Nori F., Metta G. \& Sandini G. 2011, {\textquoteleft}Computing robot internal/external wrenches by means of F/T sensors: theory and implementation on the iCub humanoid{\textquoteright}, \textit{The 11th IEEE-RAS International Conference on Humanoid Robots (Humanoids2011)}, Bled, Slovenia, October 26-28, 2011.
+
+\bibitem{Ivaldi_etal2014} Ivaldi S., Peters J., Padois V. \& Nori F. 2014, {\textquoteleft}Tools for simulating humanoid robot dynamics: a survey based on user feedback{\textquoteright}, \textit{Proceedings of the International Conference on Humanoid Robots (HUMANOIDS 2014).}, Madrid, Spain, November 18-20, 2014, Spain.
+
+\bibitem{Ivaldi_etal2012} Ivaldi S., Sigaud O., Berret B. \& Nori F. 2012, {\textquoteleft}From Humans to Humanoids: the Optimal Control Framework{\textquoteright}, \textit{Paladyn. Journal of Behavioral Robotics}, vol. 3,no. 9, July 2012.
+
+\bibitem{Jamone_etal2014} Jamone L., Fumagalli M., Natale L., Nori F., Metta G. \& Sandini 2014, {\textquoteleft}Control of physical interaction through tactile and force sensing during visually guided reaching{\textquoteright}, \textit{IEEE Multi-conference on Systems and Control}, Antibes, France, October 8-10, 2014, France, 2014.
+
+\bibitem{Jamone_etal2010} Jamone L., Fumagalli M., Natale L., Nori F., Metta G. \& Sandini G. 2010, {\textquoteleft}Machine-Learning Based Control of a Human-like Tendon-driven Neck{\textquoteright}, \textit{IEEE International Conference on Robotics and Automation (ICRA2010)}, pp.859-865,  Anchorage, Alaska, May 3-8, 2010.
+
+\bibitem{Jamone_etal2012} Jamone L., Natale L., Metta G., Nori F. \& Sandini G. 2012, {\textquoteleft}Autonomous Online Learning of Reaching Behavior in a Humanoid Robot{\textquoteright}, \textit{International Journal of Humanoid Robotics}, vol. 9,no. 3, 1250017 pp. 1--26.
+
+\bibitem{Jamone_etal2006} Jamone L., Metta G., Nori F. \& Sandini G. 2006, {\textquoteleft}James: A Humanoid Robot Acting over an Unstructured World{\textquoteright}, \textit{6th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2006)}, pp.143-150,  Genoa, Italy, December 4-6, 2006.
+
+\bibitem{Lallee_etal2010} Lallee S., Yoshida E., Mallet A., Nori F., Natale L., Metta G., Warneken F. \& Dominey P.F. 2010, {\textquoteleft}Human-Robot Cooperation Based on Interaction Learning{\textquoteright}, in O. Sigaud \& J. Peters (eds.),\textit{From Motor Learning to Interaction Learning in Robots},  Studies in Computational Intelligence, vol. 264, Springer-Verlag pp.508-556, .
+
+\bibitem{MettaG._etal2010} Metta G., Natale L., Nori F., Sandini G., Vernon D., Fadiga L., von Hofsten C., Rosander K., Santos-Victor J., Bernardino A. \& Montesano L. 2010, {\textquoteleft}The iCub Humanoid Robot: An Open-Systems Platform for Research in Cognitive Development{\textquoteright}, \textit{Neural Networks, special issue on Social Cognition: From Babies to Robots}, vol. 23,8-9, pp. 1125--1134.
+
+\bibitem{Metta_etal2011} Metta G., Natale L., Nori F. \& Sandini G. 2011, {\textquoteleft}Force control and reaching movements on the iCub humanoid robot{\textquoteright}, \textit{15th International Symposium on Robotics Research}, Flagstaff, AZ - 28 August - 1 September 2011.
+
+\bibitem{Metta_etal2008} Metta G., Sandini G., Vernon D., Natale L. \& Nori F. 2008, {\textquoteleft}The RobotCub Approach to the Development of Cognition{\textquoteright}, \textit{IROS 2008 workshop: from motor to interaction learning in robots}, Nice, France, September 22, 2008.
+
+\bibitem{Metta_etal2009} Metta G., Sandini G., Vernon D., Natale L. \& Nori F. 2009, {\textquoteleft}The iCub humanoid robot: an open platform for research in embodied cognition{\textquoteright}, \textit{IEEE/RAS International Conference on Humanoid Robots (HUMANOIDS2009)}, Paris, December 7-10, 2009, France.
+
+\bibitem{Metta_etal2008_2} Metta G., Vernon D., Natale L., Nori F. \& Sandini G. 2008, {\textquoteleft}The iCub humanoid robot: an open platform for research in embodied cognition{\textquoteright}, \textit{Workshop on Performance Metrics for Intelligent Systems Workshop}, Washington, USA, August 19-21, 2008.
+
+\bibitem{Mingo_etal2014} Mingo H.E., Traversaro S., Alessio R., Mirko F., Settimi A., Romano F., Natale L., Bicchi A.: N. F. \& Tsagarakis G. 2014, {\textquoteleft}A Yarp based plugin for Gazebo Simulator{\textquoteright}, \textit{2014 Modelling and Simulation for Autonomous Systems}, Springer International Publishing, Switzerland, 2014.
+
+\bibitem{Mingo_etal2014_2} Mingo H.E., Traversaro S., Alessio R., Mirko F., Settimi A., Romano F., Natale L., Bicchi A., Nori F. \& Tsagarakis G. Nikos 2014, {\textquoteleft}A Yarp based plugin for Gazebo Simulator{\textquoteright}, \textit{2014 Modelling and Simulation for Autonomous Systems},.
+
+\bibitem{Natale_etal2013} Natale L., Nori F., Metta G., Fumagalli M., Ivaldi S., Pattacini U., Randazzo M., Schmitz A. \& Sandini G. 2013, {\textquoteleft}The iCub platform: a tool for studying intrinsically motivated learning{\textquoteright}, in M. G. and M. Baldassarre (ed.),\textit{Intrinsically motivated learning in natural and artificial systems}, Springer-Verlag, Berlin.
+
+\bibitem{Natale_etal2014} Natale L., Nori F., Parmiggiani A. \& Metta G. 2014, {\textquoteleft}Sensorimotor Coordination in a Humanoid Robot: Building Intelligence on the iCub{\textquoteright}, \textit{Bioinspired Approaches for Human-Centric Technologies}, Springer.
+
+\bibitem{Natale_etal2007} Natale L., Nori F., Sandini G. \& Metta G. 2007, {\textquoteleft}Learning precise 3D reaching in a humanoid robot{\textquoteright}, \textit{IEEE International Conference on Development and Learning (ICDL2007)}, pp.324 - 329,  London, UK, July 11-13, 2007.
+
+\bibitem{NoriF._etal2009} Nori F., Sandini G. \& Konczak J. 2009, {\textquoteleft}Can imprecise internal motor models explain the  ataxic hand trajectories during reaching in young infants?{\textquoteright}, \textit{Ninth International Conference on  Epigenetic Robotics: Modeling Cognitive Development in Robotic Systems}, pp.129-135,  Venice, Italy, November 12-14, 2009.
+
+\bibitem{Nori_etal2012} Nori F., Berret B., Fiorio L., Parmiggiani A. \& Sandini G. 2012, {\textquoteleft}Control of a single Degree of Freedom Noise Rejecting -- Variable Impedance Actuator{\textquoteright}, \textit{10th International IFAC Symposiums on Robot Control}, Dubrovnik, Croatia, September 05-07, 2012.
+
+\bibitem{Nori_etal2006} Nori F., Metta G. \& Sandini G. 2006, {\textquoteleft}Adaptive Combination of Motor Primitives{\textquoteright}, \textit{Adaptation in Artificial and Biological Systems}, Bristol, UK, April 5-6, 2006.
+
+\bibitem{Nori_etal2008} Nori F., Metta G. \& Sandini G. 2008, {\textquoteleft}Exploiting Motor Modules in Modular Contexts{\textquoteright}, in Alfons Schuster (ed.),\textit{Robust Intelligent Systems}, vol. XII 299, Springer pp.209-229, Berlin, Germany, September 01, 2008.
+
+\bibitem{Nori_etal2007} Nori F., Natale L., Sandini G. \& Metta G. 2007, {\textquoteleft}Autonomous learning of 3D reaching in a humanoid robot{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2007)}, pp.1142-1147,  San Diego, California, October 29-November 2, 2007.
+
+\bibitem{Nori_etal2014} Nori F., Peters J., Padois V., Babic J., Mistry M. \& Ivaldi S. 2014, {\textquoteleft}Whole-body motion in humans and humanoids{\textquoteright}, \textit{Proceedings of the Workshop on New Research Frontiers for Intelligent Autonomous Systems (NRF-IAS)},.
+
+\bibitem{Nori_etal2013} Nori F., Sandini G. \& Metta G. 2013, {\textquoteleft}Model of cyclotorsion in a Tendon Driven Eyeball: theoretical model and qualitative evaluation on a robotic platform{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2013)}, Tokyo, Japan, November 3-7, 2013.
+
+\bibitem{Nori_etal2015} Nori F., Traversaro S., Eljaik J., Romano F., Del Prete A. \& Pucci D. 2015, {\textquoteleft}iCub whole-body control through force regulation on rigid non-coplanar contacts{\textquoteright}, \textit{Frontiers in Robotics and AI}.
+
+\bibitem{Nori_etal2007_2} Nori F., Jamone L., Metta G. \& Sandini G. 2007, {\textquoteleft}Accurate control of a human-like tendon-driven neck{\textquoteright}, \textit{7th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2007)}, pp.371-378,  Pittsburgh, Pennsylvania, USA, November 29 - December 1, 2007.
+
+\bibitem{Palinko_etal2014} Palinko O., Sciutti A., Patan{\'e} L., Rea F., Nori F. \& Sandini G. 2014, {\textquoteleft}Communicative Lifting Actions in Human-Humanoid Interaction{\textquoteright}, \textit{Accepted fot IEEE/RAS International Conference of Humanoids Robotics (HUMANOIDS 2014)}, Madrid, Spain, November 18-20, 2014.
+
+\bibitem{Parmiggiani_etal2012} Parmiggiani A., Maggiali M., Natale L., Nori F., Schmitz A., Tsagarakis N., Santos Victor J., Becchi F., Sandini G. \& Metta G. 2012, {\textquoteleft}The Design of the iCub Humanoid Robot{\textquoteright}, \textit{International Journal of Humanoid Robotics}, vol. 9,no. 4, pp. 1--24.
+
+\bibitem{PataneL._etal2013} Patan{\`e} L., Sciutti A., Berret B., Squeri V., Masia L., Sandini G. \& Nori F. 2013, {\textquoteleft}The role of modularity in the learning and generalization of reaching.{\textquoteright}, \textit{43rd annual meeting of the Society for Neuroscience (SfN).}, San Diego, California, USA, November 9-13, 2013.
+
+\bibitem{Patane_etal2011} Patan{\`e} L., Nori F., Berret B., Sciutti A. \& Sandini G. 2011, {\textquoteleft}The role of modularity in learning novel kinematic internal models{\textquoteright}, \textit{21st Annual Conference of the Society for the Neural Control of Movement}, San Juan, Puerto Rico, April 26-May 1, 2011.
+
+\bibitem{Patane_etal2012} Patan{\`e} L., Nori F., Berret B., Sciutti A., Squeri V. \& Masia L. and S. G. 2012, {\textquoteleft}Modular learning of different kinematic perturbations: a model-based approach{\textquoteright}, \textit{22nd Annual Conference of the Society for the Neural Control of Movement}, Venice, Italy, April 23 - 29, 2012.
+
+\bibitem{Patane_etal2012_2} Patan{\`e} L., Sciutti A., Berret B., Squeri V., Masia L., Sandini G. \& Nori F. 2012, {\textquoteleft}Modeling kinematic forward model adaptation by modular decomposition{\textquoteright}, \textit{IEEE International Conference on Biomedical Robotics and Biomechatronics (Biorob2012)}, Rome, Italy, June 24-27, 2012.
+
+\bibitem{Pattacini_etal2010} Pattacini U., Nori F., Natale L., Metta G. \& Sandini G. 2010, {\textquoteleft}An Experimental Evaluation of a Novel Minimum-Jerk Cartesian Controller for Humanoid Robots{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2010)}, IEEE pp.1668-1674, , Taipei, Taiwan, October 18-22, 2010.
+
+\bibitem{Randazzo_etal2010} Randazzo M., Fumagalli M., Nori F., Metta G. \& Sandini G. 2010, {\textquoteleft}Closed loop control of a rotational joint driven by two antagonistic dielectric elastomer actuators{\textquoteright}, \textit{ICRA 2010, Workshop on {\textquotedblleft}New variable impedance actuators for the next generation of robots{\textquotedblright}}, Anchorage, Alaska, May 3-8, 2010.
+
+\bibitem{Randazzo_etal2010_2} Randazzo M., Fumagalli M., Nori F., Metta G. \& Sandini G. 2010, {\textquoteleft}Force control of a tendon driven joint actuated by dielectric elastomers{\textquoteright}, \textit{12th International Conference on New Actuators (Actuator 2010)}, Bremen, Germany, 14-16 June, 2010.
+
+\bibitem{Randazzo_etal2011} Randazzo M., Fumagalli M., Nori F., Natale L., Metta G. \& Sandini G. 2011, {\textquoteleft}A comparison between joint level torque sensing and proximal F/T sensor torque estimation: implementation on the iCub{\textquoteright}, \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS2011)}, pp.4161-4167,  San Francisco, USA, September 25-30, 2011.
+
+\bibitem{Romano_etal2015} Romano F., Del Prete A., Mansard N. \& Nori F. 2015, {\textquoteleft}Prioritized Optimal Control: a Hierarchical Differential Dynamic Programming approach{\textquoteright}, \textit{IEEE International Conference on Robotics And Automation}, Seattle, USA, May 26th - 30th, 2015.
+
+\bibitem{Romano_etal2014} Romano F., Fiorio L., Sandini G. \& Nori F. 2014, {\textquoteleft}Control of a two-DOF manipulator equipped with a pnr- Variable Stiffness Actuator{\textquoteright}, \textit{2014 IEEE Multi-Conference on Systems and Control}, Antibes, France, October 8-10, 2014.
+
+\bibitem{Saegusa_etal2007} Saegusa R., Nori F., Sandini G., Metta G. \& Sakka S. 2007, {\textquoteleft}Sensory Prediction for Autonomous Robots{\textquoteright}, \textit{The 7th IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2007)}, pp.102-108,  Pittsburgh, Pennsylvania, USA, November 29 - December 1, 2007.
+
+\bibitem{Schmitz_etal2010} Schmitz A., Pattacini U., Nori F., Natale L., Metta G. \& Sandini G. 2010, {\textquoteleft}Design, Realization and Sensorization of the Dexterous iCub Hand{\textquoteright}, \textit{IEEE-RAS International Conference on Humanoid Robots (HUMANOIDS2010)}, IEEE pp.186-191, , Nashville, TN, December 6-8, 2010.
+
+\bibitem{Sciutti_etal2012} Sciutti A., Bisio A., Nori F., Metta G., Sandini G. \& Fadiga L. 2012, {\textquoteleft}Human and robotic goal oriented actions evoke motor resonance -- a gaze behavior study{\textquoteright}, \textit{5th International Conference on Cognitive Systems}, TU Vienna, Austria, February 22-23, 2012.
+
+\bibitem{Sciutti_etal2012_2} Sciutti A., Bisio A., Nori F., Metta G., Fadiga L., Pozzo T. \& Sandini G. 2012, {\textquoteleft}Measuring human-robot interaction through motor resonance{\textquoteright}, \textit{International Journal of Social Robotics}, vol. 4,no. 3, pp. 223--234.
+
+\bibitem{Sciutti_etal2012_3} Sciutti A., Bisio A., Nori F., Metta G., Fadiga L. \& Sandini G. 2012, {\textquoteleft}Anticipatory gaze in human-robot interactions{\textquoteright}, \textit{"Gaze in HRI from modeling to communication workshop at the 7th ACM/IEEE International Conference on Human-Robot Interaction}, Boston, Massachusetts, USA, March 5 - 8, 2012.
+
+\bibitem{Sciutti_etal2013} Sciutti A., Bisio A., Nori F., Metta G., Fadiga L. \& Sandini. G. 2013, {\textquoteleft}Robots can be perceived as goal-oriented agents{\textquoteright}, in Bilge Mutlu and Yukiko I. Nakano Hagen Lehmann F. Broz (ed.),\textit{Gaze in human-robot communication, Special Issue of Interaction Studies 14:3}, vol. XV, John Benjamins publishing company pp.329--350.
+
+\bibitem{Sciutti_etal2012_4} Sciutti A., Bisio A., Nori F., Metta G., Pozzo T., Sandini G. \& Fadiga L. 2012, \textit{Human and robotic actions evoke motor resonance}, Mirror neurons: new frontiers 20 years after their discovery, Erice, Italy, August 31--September 6, 2012.
+
+\bibitem{Sciutti_etal2014} Sciutti A., Bisio A., Nori F., Metta G. \& Sandini G. 2014, \textit{iCub, un robot bambino per lo studio dello sviluppo e dell{\textquoteright}interazione uomo-robot.}, vol. 9, pages 11-20.
+
+\bibitem{Sciutti_etal2008} Sciutti A., Nori F., Metta G., Pozzo T. \& Sandini G. 2008, {\textquoteleft}A study on the perceptual and motor bases of prediction{\textquoteright}, in Patron editore (ed.),\textit{First National Conference on Bioengineering}, pp.273 - 274,  Pisa, Italy, July 3-5, 2008.
+
+\bibitem{Sciutti_etal2008_2} Sciutti A., Nori F., Metta G., Pozzo T. \& Sandini G. 2008, {\textquoteleft}Motor and perception-based prediction{\textquoteright}, in Pion (ed.),\textit{Perception ECVP Abstract Supplement}, vol. 37, Utrecht, The Netherlands, August 24 - 28, 2008.
+
+\bibitem{Sciutti_etal2009} Sciutti A., Nori F., Metta G., Pozzo T. \& Sandini G. 2009, {\textquoteleft}Internal models in two-dimensional target motion prediction and interception{\textquoteright}, \textit{Journal of Vision (Abstract)}, vol. 9, pp.1141-1141,  Naples, Florida, USA, May 8 - 13, 2009.
+
+\bibitem{Sciutti_etal2009_2} Sciutti A., Nori F., Metta G., Pozzo T. \& Sandini G. 2009, {\textquoteleft}Learning to intercept targets driven by force fields: effects of modulus and orientation variability{\textquoteright}, in Pion (ed.),\textit{Perception ECVP Abstract Supplement}, vol. 38, pp.34,  Regensburg, Germany, August 24 - 28, 2009.
+
+\bibitem{Sciutti_etal2007} Sciutti A., Nori F., Metta G. \& Sandini G. 2007, {\textquoteleft}Internal models in interception{\textquoteright}, \textit{ESF Conference Three dimensional sensory and motor space: perceptual consequences of motor action}, Sant Feliu de Guixols, Spain, October, 2007.
+
+\bibitem{Sciutti_etal2011} Sciutti A., Nori F., Jacono M., Metta G., Sandini G. \& Fadiga L. 2011, {\textquoteleft}Proactive Gaze Behavior: Which Observed Action Features Do Influence The Way We Move Our Eyes?{\textquoteright}, \textit{Journal of Vision (abstract)}, vol. 11, pp.509,  VSS Conference 2011.
+
+\bibitem{Sciutti_etal2014_2} Sciutti A., Palinko O., Patan{\`e} L., Rea F., Nori F., Noceti N., Odone F., Verri A. \& Sandini G. 2014, {\textquoteleft}Bidirectional Human-robot action reading{\textquoteright}, \textit{Human-Friendly Robotics Workshop (HFR 2014)}, Pontedera, Pisa, Italy, October, 23-24, 2014.
+
+\bibitem{Sciutti_etal2013_2} Sciutti A., Patan{\`e} L., Nori F. \& Sandini G. 2013, {\textquoteleft}Do humans need learning to read humanoid lifting actions?{\textquoteright}, \textit{Third Joint IEEE International Conference of Development and Learning and on Epigenetic Robotics 2013}, Osaka, Japan, August 18-22, 2013.
+
+\bibitem{Sciutti_etal2013_3} Sciutti A., Patan{\`e} L., Nori F. \& Sandini G. 2013, {\textquoteleft}Reading object properties from human and humanoid action observation{\textquoteright}, \textit{6th International Workshop on Human-Friendly Robotics}, Rome, Italy, September 25-26, 2013.
+
+\bibitem{Sciutti_etal2014_3} Sciutti A., Patan{\`e} L., Nori F. \& Sandini G. 2014, {\textquoteleft}Development of perception of weight from human or robot  lifting observation{\textquoteright}, \textit{9th ACM/IEEE International Conference on Human-Robot Interaction}, pp.290-291,  Bielefeld, Germany, March 3-6, 2014.
+
+\bibitem{Sciutti_etal2014_4} Sciutti A., Patan{\`e} L., Nori F. \& Sandini G. 2014, {\textquoteleft}Understanding object weight from human and humanoid lifting actions{\textquoteright}, \textit{IEEE Transactions on Autonomous Mental Development}, vol. 6,no. 2, pp. 80--92.
+
+\bibitem{Sciutti_etal2013_4} Sciutti A., Patan{\`e} L., Nori F. \& Sandini G. 2013, {\textquoteleft}Understanding object properties from the observation of the action partner{\textquoteright}, \textit{Human Robot Collaboration Workshop at RSS 2013}, Berlin, Germany, June 28, 2013.
+
+\bibitem{Sciutti_etal2014_5} Sciutti A., Patan{\`e} L., Palinko O., Nori F. \& Sandini G. 2014, {\textquoteleft}Developmental changes in children understanding robotic actions: the case of lifting.{\textquoteright}, \textit{Fourth Joint IEEE International Conference of Development and Learning and on Epigenetic Robotics 2014}, Genoa, Italy, October 13-16, 2014.
+
+\bibitem{Sciutti_etal2011_2} Sciutti A., Nori F., Jacono M., Metta G., Sandini G. \& Fadiga L. 2011, {\textquoteleft}Human and robotic goal oriented actions evoke motor resonance -- a gaze behavior study{\textquoteright}, \textit{Society of Neuroscience Abstracts}, Washington D.C., U.S., November 11-16, 2011.
+
+\bibitem{Tikhanoff_etal2008} Tikhanoff V., Cangelosi A., Fitzpatrick P., Metta G., Natale L. \& Nori F. 2008, {\textquoteleft}An open-source simulator for cognitive robotics research: The prototype of the  iCub humanoid robot simulator{\textquoteright}, \textit{Workshop on Performance Metrics for Intelligent Systems}, Washington DC, USA, August 19-21, 2008.
+
+\bibitem{Tikhanoff_etal2008_2} Tikhanoff V., Fitzpatrick P., Nori F. Natale L. Metta G. \& Cangelosi A. 2008, {\textquoteleft}The iCub humanoid robot simulator{\textquoteright}, \textit{IROS 2008 workshop on robot simulators: available software, scientific applications and future trends}, Nice, France, September 22, 2008.
+
+\bibitem{Traversaro_etal2013} Traversaro S., Del Prete A., Muradore R., Natale L. \& Nori F. 2013, {\textquoteleft}Inertial Parameter Identification Including Friction and Motor Dynamics{\textquoteright}, \textit{IEEE/RAS International Conference of Humanoids Robotics (HUMANOIDS2013)}, Atlanta, GA, USA, October 15-17, 2013.
+
+\bibitem{Traversaro_etal2015} Traversaro S., Del Prete A., Ivaldi S. \& Nori F. 2015, {\textquoteleft}Inertial parameters identification and joint torques estimation with proximal force/torque sensing{\textquoteright}, \textit{IEEE International Conference on Robotics and Automation}, pp.6,  Seattle, USA, May 26th - 30th, 2015.
+
+\bibitem{Traversaro_etal2015_2} Traversaro S., Pucci D. \& Nori F. 2015, {\textquoteleft}In Situ Calibration of Six-Axis Force-Torque Sensors using Accelerometer Measurements{\textquoteright}, \textit{IEEE International Conference on Robotics and Automation}, pp.7,  Seattle, USA, May 26th - 30th, 2015,.
+
+\end{thebibliography}
+
+
+% \bibliography{cv}
+% To remove the references (works but gives an error)
+\nobibliography{cv}
+\bibliographystyle{myplain}
+
+\end{document}
